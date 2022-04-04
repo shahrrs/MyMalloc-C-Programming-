@@ -1,0 +1,5 @@
+Test Case E was designed to make sure mymalloc.c works properly, specifically the divide and combine methods. To do this, we malloced equal sizes until the memory was full.
+Then, we freed everything. After that, we tested to see if you can allocate the max amount of memory to see if everything was cleared properly.
+
+For Test Case F, a similar thing was done in that we malloced equal sizes until the memory was full. However, after this, we freed every other block and then tried to allocate
+a size of memory that was greater than any of the current free blocks to see if it generated an error. This was done to see if the malloc "not enough space" error worked properly.
